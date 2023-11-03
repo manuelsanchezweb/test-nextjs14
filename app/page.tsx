@@ -1,6 +1,7 @@
-import AcmeLogo from '@/app/ui/acme-logo';
+import AcmeLogo from '@/app/ui/acme-logo'
+import Image from 'next/image'
 
-import Link from 'next/link';
+import Link from 'next/link'
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col p-6">
@@ -24,9 +25,23 @@ export default function Page() {
           </Link>
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
-          {/* Add Hero Images Here */}
+          {/* No carga las dos imagenes, solo carga la que necesita, esta optimizado */}
+          <Image
+            className="hidden md:block"
+            width={1000}
+            height={700}
+            src="/hero-desktop.png"
+            alt="hero image"
+          />
+          <Image
+            className="block md:hidden"
+            width={560}
+            height={620}
+            src="/hero-mobile.png"
+            alt="hero image"
+          />
         </div>
       </div>
     </main>
-  );
+  )
 }
