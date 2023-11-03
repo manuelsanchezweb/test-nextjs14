@@ -6,3 +6,8 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 
 To generate passwords
 openssl rand -base64 32
+
+Testen easy with
+https://test-nextjs14-one.vercel.app/dashboard
+user@nextmail.com
+123456
